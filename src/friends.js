@@ -68,6 +68,13 @@ export const friends = [
       username: 'syam',
       email: 'badri.siva1999@gmail.com', 
       linkedin: 'https://www.linkedin.com/in/syambadri/'
+    }, 
+    {
+      id: 11, 
+      name: "Nune Arun Sagar", 
+      username: "Arun", 
+      email: "arunsagarnune02@gmail.com", 
+      linkedin: "https://www.linkedin.com/in/narunsagar/"
     }
   ];
   
