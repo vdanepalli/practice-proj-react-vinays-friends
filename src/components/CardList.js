@@ -2,6 +2,9 @@ import React from 'react';
 import Card from './Card';
 
 const CardList = ({friends}) => {
+    // if (true){
+        // throw new Error('No way!!!');
+    // }
     return (
         <div>
             {
