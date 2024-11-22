@@ -6,6 +6,10 @@ import Scroll from '../components/Scroll';
 import './App.css'; 
 import {friends} from '../friends';
 
+function shuffleArray(arr) {
+  return arr.sort(() => Math.random() - 0.5); // Randomly shuffle array
+}
+
 
 class App extends Component {
   constructor() {
@@ -23,7 +27,8 @@ class App extends Component {
     //   .then(response=> response.json())
     //   .then(users => {this.setState({ friends: users})});
 
-    this.setState({friends: friends});
+    const shuffledFriends = shuffleArray([...friends]);
+    this.setState({friends: shuffledFriends});
     // console.log('Mounting: Updated friends list');
 
     // this.setState({friends: []});
