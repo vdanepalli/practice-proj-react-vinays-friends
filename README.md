@@ -1,39 +1,45 @@
-# proj_friends
+# [Project: Vinay's Friends](https://vdanepalli.github.io/proj_friends/)
 
-## [Project Vinay's Friends](https://vdanepalli.github.io/proj_friends/)
+## [Live Demo](https://vdanepalli.github.io/proj_friends/)
 
-- This is a simple project to demonstrate the power of React. 
-- Although this is developed using Create-React-App, you can use Vite framework too
-- It is easy to switch between these two. 
+This is a simple project to demonstrate the power of React. While this project was developed using Create-React-App, you can also use the Vite framework for faster builds and better performance. Switching between these frameworks is straightforward.
 
+---
 
-<br/><br/>
+## Project Structure
 
+- **[Components](src/components):** Pure functions that are deterministic and reusable.
+- **[Containers](src/containers):** Components with state that wrap other components.
+- **[ErrorBoundary](src/components/ErrorBoundary.js):** Gracefully handles runtime errors to ensure a seamless user experience.
+- **[Scroll](src/components/Scroll.js):** Wraps the [CardList](src/components/CardList.js), which renders a list of [Cards](src/components/Card.js).
 
-- [Components](src/components) are pure functions, deterministic. 
-- [Containers](src/containers) have state associated and contain components. 
-- [ErrorBoundary](src/components/ErrorBoundary.js) is used to gracefully handle any errors. 
-- [Scroll](src/components/Scroll.js) contains [CardList](src/components/CardList.js) which is a list of [Cards](src/components/Card.js)
+---
 
-## To run this proj locally 
+## Running the Project Locally
 
-1. `git clone https://github.com/vdanepalli/proj_friends.git`
-2. `cd proj_friends`
-3. `npm install` -- to install node modules
-4. `npm start` -- to run react app
+Follow these steps to set up and run the project on your local machine:
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/vdanepalli/proj_friends.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd proj_friends
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-<br/><br/>
+----
 
-- `npm update` -- to update node modules to refer latest packages
-- `npm audit fix`
+## Updating the List of Friends
 
-## To update the list of friends 
+To add or modify the list of friends displayed in the app, update the file:
+friends.js
 
-1. Update the [friends.js](src/friends.js) file.
-
-
-## Note
-
-- Everytime you update the main branch (change in application), run npm run deploy to update the gh-pages branch as well. 
-- This automatically deploys the resulting updated production build
